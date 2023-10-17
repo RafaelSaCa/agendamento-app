@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Paciente } from '../model/paciente';
 
 @Component({
   selector: 'app-pacientes',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./pacientes.component.scss']
 })
 export class PacientesComponent {
+
+  pacientes : Paciente[] = [];
+  displayedColumns = ['id', 'nome','cpf','rg','telefone', 'endereco'];
 
 }
